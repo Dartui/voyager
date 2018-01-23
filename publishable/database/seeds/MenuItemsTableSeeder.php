@@ -20,7 +20,7 @@ class MenuItemsTableSeeder extends Seeder
 
             $menuItem = MenuItem::firstOrNew([
                 'menu_id' => $menu->id,
-                'title'   => 'Dashboard',
+                'title'   => __('voyager.generic.dashboard'),
                 'url'     => '',
                 'route'   => 'voyager.dashboard',
             ]);
